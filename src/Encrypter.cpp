@@ -6,8 +6,7 @@
 #include <array>
 
 static unsigned char vigenereTable[26][26];
-static const unsigned char ALPHABET[26] = { 'a','b','c','d','e','f','g','h','i','j','k'
-,'l','m','n','o','p','q','r','s','t','u','v','w','x','y','z' };
+static const unsigned char ALPHABET[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
 //ASCII 97 - 122 = a - z
 
@@ -32,13 +31,12 @@ void Encrypter::setKey(std::string key)
 {
 	std::string tempKey;
 
-	for(size_t i = 0; i < key.length(); i++)
+	for (size_t i = 0; i < key.length(); i++)
 	{
 		tempKey += key[i];
 	}
 
 	this->key = tempKey;
-	
 }
 
 std::string Encrypter::getKey()
@@ -113,7 +111,7 @@ char Encrypter::findCorrectRow(char keyChar, char letter)
 	return -1;
 }
 
-void Encrypter::run_program() 
+void Encrypter::run_program()
 {
 	int option = 0;
 
@@ -150,6 +148,5 @@ void Encrypter::run_program()
 			exit(0);
 		else
 			std::cout << "Ingrese una opción válida.\n";
-
 	}
 }

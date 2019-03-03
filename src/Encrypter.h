@@ -6,7 +6,7 @@
 
 class Encrypter
 {
-public:
+  public:
 	Encrypter();
 
 	/* Creates the Vigenere Table to be used in the algorithm */
@@ -19,22 +19,21 @@ public:
 	std::string getKey();
 
 	/* Encodes the string passed by parameter */
-	std::string encryptString(std::string string); 
+	std::string encryptString(std::string string);
 
 	/* Decodes ths string passed by parameter */
-	std::string decryptString(std::string string); 
+	std::string decryptString(std::string string);
 
 	/* User inputs a string to be used in the Encryption process (Console use only ***for tests) */
-	std::string setString(); 
+	std::string setString();
 
 	/* Finds the corresponding column to the letter in the encoded string */
-	char findCorrectRow(char keyChar, char letter); 
+	char findCorrectRow(char keyChar, char letter);
 
 	void run_program();
 
-private:
+  private:
 	std::string key;
 };
 
 #endif // !ENCRYPTOR_H
-

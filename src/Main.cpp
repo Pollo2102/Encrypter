@@ -9,6 +9,5 @@ int main(int argc, char *argv[])
 
 	encrypter.run_program();
 
-
 	return 0;
 }
